@@ -1,0 +1,15 @@
+[submodule "flutter_nav_test"]
+	path = flutter_nav_test
+	url = ./flutter_nav_test/
+[submodule "my_app_1"]
+	path = my_app_1
+	url = ./my_app_1/
+[submodule "flutter_template_1"]
+	path = flutter_template_1
+	url = ./flutter_template_1/
+[submodule "Flutter-Template.wiki"]
+	path = Flutter-Template.wiki
+	url = ./Flutter-Template.wiki/
+[submodule "hello_world2"]
+	path = hello_world2
+	url = ./2/hello_world2/
