@@ -13,3 +13,6 @@
 [submodule "hello_world2"]
 	path = hello_world2
 	url = ./2/hello_world2/
+[submodule "2/hello_world2"]
+	path = 2/hello_world2
+	url = ./2/hello_world2/
