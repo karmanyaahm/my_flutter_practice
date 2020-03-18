@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'selection_screen.dart';
+
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -32,5 +34,9 @@ class SelectionButton extends StatelessWidget {
         builder: (context) => SelectionScreen(),
       ),
     );
+    Scaffold.of(context).removeCurrentSnackBar();
+    if (result != null) {
+      Scaffold.of(context)..showSnackBar(SnackBar(content: Text("$result")));
+    }
   }
 }
