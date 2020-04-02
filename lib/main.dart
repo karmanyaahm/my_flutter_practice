@@ -8,29 +8,17 @@ import 'package:flutter/material.dart';
 import 'package:firebase_analytics/firebase_analytics.dart';
 import 'package:firebase_analytics/observer.dart';
 
-import 'tabs_page.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(App());
 }
 
-class MyApp extends StatelessWidget {
-  static FirebaseAnalytics analytics = FirebaseAnalytics();
-  static FirebaseAnalyticsObserver observer =
-      FirebaseAnalyticsObserver(analytics: analytics);
-
-  @override
+class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Firebase Analytics Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      navigatorObservers: <NavigatorObserver>[observer],
-      home: MyHomePage(
-        title: 'Firebase Analytics Demo',
-        analytics: analytics,
-        observer: observer,
+      home: Center(
+        child: Text('Firebase Analytics Demo'),
       ),
     );
   }
